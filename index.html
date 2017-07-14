@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Customer needs</title>
+    
+    <!-- Bootstrap -->
+   <!--  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+      <!-- Compiled and minified CSS -->
+      <!-- Materialize css to respect Google design guidelines -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+
+    <!-- Module -->
+    <link href="assets/module/css/module.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div id='content_container'>
+
+      <div class='container white-text'>
+      <div class="row">
+        <div class="col s6">
+          <h1>Customer needs</h1>
+          <tr></tr>
+          <p><b>Understanding our customers’ needs is paramount to Commercial Lines.</b></p>
+          <p>Customer needs can vary from simple to complex. They can be uniquely customised or mass customised.</p>
+          <p><b>Click on each circle</b> to find out more about typical needs for Commercial Lines customers.</p>
+        </div>
+        <div class="col s6">
+          <div class="highLight isNone" id="employees"><h3>Protecting</h3><p> their employees</p> </div>
+          <div class="highLight isNone" id="operations"><h3>Protecting</h3><p>their operations</p></div>
+          <div class="highLight isNone" id="business"><h3>Protecting</h3><p> their business</p></div>
+          <div class="highLight isNone" id="environment"><h3>Protecting</h3><p> their partners and their environment</p></div>
+          <div class="highLight isNone" id="assets"><h3>Protecting</h3> <p>their assets</p></div>
+          <img onmouseover="getInfo()" onmouseout="hideInfo ()" height="500" width="500" id="myimg" src="src/assets/Business_protector.png">
+        </div>
+      </div>
+        
+
+
+      </div>   
+
+    
+
+      
+    </div><!-- END content_container -->
+
+    <script type="text/javascript">
+      // function getDetails(obj){
+      //   clickX = window.event.x-obj.offsetLeft;
+      //   clickY = window.event.y-obj.offsetTop;
+      //       if((clickX>=100&&clickX<=200)&&(clickY>=100&&clickY<=200))
+      //       {
+      //         var x = document.getElementById('employees');
+      //         x.classList.toggle("isNone");
+      //       }
+      //        if((clickX>=300&&clickX<=400)&&(clickY>=300&&clickY<=400))
+      //       {
+      //         var x = document.getElementById('operations');
+      //         x.classList.toggle("isNone");
+      //       }
+      //        if((clickX>=100&&clickX<=200)&&(clickY>=100&&clickY<=200))
+      //       {
+      //         var x = document.getElementById('business');
+      //         x.classList.toggle("isNone");
+      //       }
+      //       if ((clickX>=0&&clickX<=0)&&(clickY>=0&&clickY<=0)) {
+      //         var x = document.getElementById('employees');
+      //         x.classList.toggle("isNone");
+
+      //         var u = document.getElementById('operations');
+      //         u.classList.toggle("isNone");
+
+      //         var i = document.getElementById('business');
+      //         i.classList.toggle("isNone");
+
+      //         var o = document.getElementById('environment');
+      //         o.classList.toggle("isNone");
+
+      //       }
+      //   }
+
+
+        function getInfo () {
+          var x = document.getElementsByClassName("highLight");
+          x.classList.toggle("isNone");
+        }
+        function hideInfo () {
+          var x = document.getElementsByClassName("highLight");
+          x.classList.toggle("isNone");
+        }
+    </script>
+   
+  </body>
+</html>
