@@ -39,11 +39,11 @@
           <p><b>Click on each circle</b> to find out more about typical needs for Commercial Lines customers.</p>
         </div>
         <div class="col s6">
-          <div class="highLight isNone" id="employees"><h3>Protecting</h3><p> their employees</p> </div>
-          <div class="highLight isNone" id="operations"><h3>Protecting</h3><p>their operations</p></div>
-          <div class="highLight isNone" id="business"><h3>Protecting</h3><p> their business</p></div>
-          <div class="highLight isNone" id="environment"><h3>Protecting</h3><p> their partners and their environment</p></div>
-          <div class="highLight isNone" id="assets"><h3>Protecting</h3> <p>their assets</p></div>
+          <div class="highLight isNone z-depth-5" id="employees"><h3>Protecting</h3><p> their employees</p> </div>
+          <div class="highLight isNone z-depth-5" id="operations"><h3>Protecting</h3><p>their operations</p></div>
+          <div class="highLight isNone z-depth-5" id="business"><h3>Protecting</h3><p> their business</p></div>
+          <div class="highLight isNone z-depth-5" id="environment"><h3>Protecting</h3><p> their partners and their environment</p></div>
+          <div class="highLight isNone z-depth-5" id="assets"><h3>Protecting</h3> <p>their assets</p></div>
           <img onmouseover="getInfo()" onmouseout="hideInfo ()" height="500" width="500" id="myimg" src="src/assets/Business_protector.png">
         </div>
       </div>
@@ -58,48 +58,38 @@
     </div><!-- END content_container -->
 
     <script type="text/javascript">
-      // function getDetails(obj){
-      //   clickX = window.event.x-obj.offsetLeft;
-      //   clickY = window.event.y-obj.offsetTop;
-      //       if((clickX>=100&&clickX<=200)&&(clickY>=100&&clickY<=200))
-      //       {
-      //         var x = document.getElementById('employees');
-      //         x.classList.toggle("isNone");
-      //       }
-      //        if((clickX>=300&&clickX<=400)&&(clickY>=300&&clickY<=400))
-      //       {
-      //         var x = document.getElementById('operations');
-      //         x.classList.toggle("isNone");
-      //       }
-      //        if((clickX>=100&&clickX<=200)&&(clickY>=100&&clickY<=200))
-      //       {
-      //         var x = document.getElementById('business');
-      //         x.classList.toggle("isNone");
-      //       }
-      //       if ((clickX>=0&&clickX<=0)&&(clickY>=0&&clickY<=0)) {
-      //         var x = document.getElementById('employees');
-      //         x.classList.toggle("isNone");
-
-      //         var u = document.getElementById('operations');
-      //         u.classList.toggle("isNone");
-
-      //         var i = document.getElementById('business');
-      //         i.classList.toggle("isNone");
-
-      //         var o = document.getElementById('environment');
-      //         o.classList.toggle("isNone");
-
-      //       }
-      //   }
-
 
         function getInfo () {
-          var x = document.getElementsByClassName("highLight");
-          x.classList.toggle("isNone");
+          var x = document.getElementById('employees');
+              x.classList.toggle("isNone");
+
+          var y = document.getElementById('operations');
+              y.classList.toggle("isNone");
+
+          var o = document.getElementById('business');
+              o.classList.toggle("isNone");
+
+          var u = document.getElementById('environment');
+              u.classList.toggle("isNone");
+          var j = document.getElementById('assets');
+              j.classList.toggle("isNone");
         }
+
         function hideInfo () {
-          var x = document.getElementsByClassName("highLight");
-          x.classList.toggle("isNone");
+          var x = document.getElementById('employees');
+              x.classList.toggle("isNone");
+
+          var u = document.getElementById('operations');
+              u.classList.toggle("isNone");
+
+          var i = document.getElementById('business');
+              i.classList.toggle("isNone");
+
+          var o = document.getElementById('environment');
+              o.classList.toggle("isNone");
+
+          var j = document.getElementById('assets');
+              j.classList.toggle("isNone");
         }
     </script>
    

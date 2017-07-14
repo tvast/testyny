@@ -30,8 +30,9 @@ body {
 
 .highLight {
   width: 200px;
-  height: 200px;
-  background-color: blue;
+  height: 20%;
+  background-color: black;
+  position: absolute;
   
 }
 
@@ -41,20 +42,37 @@ body {
 
 #employees {
 
+  position :absolute;
+  top : 0%;
+  left : 40%;
+
 }
 
 #operations {
 
+  position :absolute;
+  top : 47%;
+  left : 39%;
+
 }
 
 #business {
+  position :absolute;
+  top : 50%;
+  left : 80%;
 
 }
 
 #environment {
 
+  top: 14%;
+    left: 75%;
+
 }
 
 #assets {
+
+  top: 3%;
+    left: 81%;
 
 }
